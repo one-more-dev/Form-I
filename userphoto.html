@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="userphoto.css">
+	<title>Form with validation</title>
+</head>
+
+
+
+<body>
+	<h1>Step 2: Take a photo for your profile</h1>
+	
+	<div class="mainarea">
+        <button class="takephoto" data-button>Turn on camera</button>
+        
+        <div class="photo_area" data-photoarea>
+            <video width="320" height="240" autoplay data-video></video>
+            <button class="shoot_photo" data-shot></button>
+        </div>
+        <div class="photo_canvas" data-photocanvas>
+            <canvas width="320" height="240" data-canvas></canvas>
+            <button class="send_photo" data-send></button>
+        </div>
+    </div>
+
+<script src="photo.js"></script>
+</body>
+</html>

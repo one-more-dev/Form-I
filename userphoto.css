@@ -1,0 +1,32 @@
+.photo_area,
+.photo_canvas{
+    display: none;
+}
+.photo_area video,
+.photo_canvas canvas{
+    display: block;
+    margin: auto;
+    border: solid 10px darkgray;
+}
+.takephoto,
+.send_photo{
+	display: block;
+	margin: 35px auto 15px auto;
+	border-color: white;
+	border-radius: 10px;
+	font-size: 1.4em;
+	color: white;
+	background-color: black;
+}
+.shoot_photo{
+    display: block;
+    box-sizing: border-box;
+    margin: 5px auto;
+	width: 40px;
+    height: 40px;
+    background-color: darkblue;
+    border: solid 8px lightgrey;
+    border-radius: 100px;
+}
+.shoot_photo:hover{    border: solid 4px darkgrey; }
+.shoot_photo:active{    background-color: red; }

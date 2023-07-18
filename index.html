@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Form with validation</title>
+</head>
+
+
+
+<body>
+	<h1>Step 1: Fill the form properly</h1>
+	
+	<form>
+		<fieldset>
+			<label class="form_label" for="full_name">Full Name</label><br>
+			<input name="full_name" id="full_name" type="text" minlength="2" data-input required />
+		</fieldset>
+		<fieldset>
+			<label class="form_label" for="mail">E-mail</label><br>
+			<input name="mail" id="mail" type="text" maxlength="80" 
+				pattern="[^\s]*?@[a-z]*\.[a-z]+" title="name@mail.com" data-input required
+			/>
+		</fieldset>
+		<fieldset>
+			<label class="form_label" for="birthday">Birthday</label><br>
+			<input name="birthday" id="birthday" type="date" data-input required />
+			<p class="text_error birth_error"></p>
+		</fieldset>
+		<fieldset>
+			<legend>Select the type ID format to be set: </legend>
+			<input name="id_format" type="radio" data-radio="id" value="general_id" id="general_id" />
+			<label for="mail">General ID</label>
+			<input name="id_format" type="radio" data-radio="br" value="brazilian_id" id="brazilian_id" />
+			<label for="mail">Brazilian General Registry</label><br>
+			<input name="id" type="text" id="id_input" maxlength="40" readonly required/>
+			<p class="text_error id_error"></p>
+		</fieldset>
+		<fieldset>
+			<input name="confirm" id="confirm" type="checkbox" required />
+			<p class="check_text">I understand this form is just for learning purposes</p>
+		</fieldset>		
+		<input type="submit" name="form_submit" class="form_submit" />
+	</form>
+
+<script type="module" src="./script.js"></script>
+<script type="module" src="./id_input.js"></script>
+</body>
+</html>

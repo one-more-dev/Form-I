@@ -1,0 +1,44 @@
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+h1{ text-align: center; }
+form,
+.mainarea{
+	min-width: 33vw;
+	width: 500px;
+	margin: 100px auto;
+	font-size: 18px;
+}
+fieldset{
+	border: none;
+}
+input{
+	height: 1.5em;
+	border: solid 2px darkblue;
+	border-radius: 5px;
+}
+#id_input{
+	width: 350px;
+}
+.text_error{
+	margin: 0;
+	font-size: 14px;
+	color: red;
+}
+.check_text{
+	display: inline;
+	color: blue;
+	font-weight: bold;
+}
+.form_submit{
+	display: block;
+	margin: 35px auto 15px auto;
+	border-color: white;
+	border-radius: 10px;
+	font-size: 1.4em;
+	color: white;
+	background-color: black;
+}
+.form_submit:hover{	color: lightblue; }
+.form_submit:click{ color: darkgreen; }
